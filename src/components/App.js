@@ -14,15 +14,15 @@ class App extends Component {
         return(
             <div id="main">
                {/* Do not remove the main div */}
-             {this.state.relatives.map((data, i) => {
-                return (
-                    <div key={i}>
-                        <ul>
-                            <li key={i}>{data}</li>
-                        </ul>
-                    </div>
-                );
-             })}
+            {this.state.relatives.map((data, i) => {
+              return (
+             <div key={i}>
+                  <ol>
+                       <li>{data}</li>
+                  </ol>
+                </div>
+          );
+        })}
             </div>
         )
     }
