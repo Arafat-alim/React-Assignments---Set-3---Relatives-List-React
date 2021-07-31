@@ -5,7 +5,11 @@ class App extends Component {
     constructor(props){
         super(props);
         this.state = {
-            relatives : ["arafat", "Aquib", "Asif", "Mehtab", "Ganguly"],
+              relatives: [
+        { relativeList: 1, name: "Arafat" },
+        { relativeList: 2, name: "aquib" },
+        { relativeList: 3, name: "Mahtab" },
+      ],
         }
     }
     
@@ -14,15 +18,12 @@ class App extends Component {
         return(
             <div id="main">
                {/* Do not remove the main div */}
-            {this.state.relatives.map((data, i) => {
-              return (
-             <div key={i}>
-                  <ol>
-                       <li>{data}</li>
-                  </ol>
-                </div>
-          );
-        })}
+         <ol>
+          {this.state.relatives.map((data, i) => {
+            console.log(data.name);
+            return <li key={data.relativeList}>{data.name}</li>;
+          })}
+        </ol>
             </div>
         )
     }
