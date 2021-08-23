@@ -18,10 +18,10 @@ class App extends Component {
         return(
             <div id="main">
                {/* Do not remove the main div */}
-        <ol>
+        <ol key={relativeListItem}>
           {this.state.relatives.map((data, i) => {
             return (
-              <li key={`relativeListItem${i}`}>
+              <li key={`relativeListItem${i + 1}`}>
                 {data.name}
               </li>
             );
