@@ -6,9 +6,9 @@ class App extends Component {
         super(props);
         this.state = {
               relatives: [
-        { relativeList: 1, name: "Arafat" },
-        { relativeList: 2, name: "aquib" },
-        { relativeList: 3, name: "Mahtab" },
+        { name: "Arafat" },
+        { name: "aquib" },
+        { name: "Mahtab" },
       ],
         }
     }
