@@ -16,17 +16,15 @@ class App extends Component {
     render() {
         
         return(
-            <div id="main">
+    <div id="main" >
                {/* Do not remove the main div */}
-        <ol key={"relativeList"}>
-          {this.state.relatives.map((data, i) => {
-            return (
-              <li key={`relativeListItem${i + 1}`}>
-                {data.name}
-              </li>
-            );
-          })}
-        </ol>
+              <ol key="relativeList">
+              <li key="relativeListItem1">Rahim</li>
+              <li key="relativeListItem2">Saima</li>
+              <li key="relativeListItem3">Vishnu</li>
+              <li key="relativeListItem4">Alok</li>
+              <li key="relativeListItem5">Sayan</li>
+            </ol>
             </div>
         )
     }
