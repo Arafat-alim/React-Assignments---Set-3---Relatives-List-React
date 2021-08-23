@@ -21,7 +21,7 @@ class App extends Component {
         <ol>
           {this.state.relatives.map((data, i) => {
             return (
-              <li key={`relativeListItem${i + 1}`} type="a">
+              <li key={`relativeListItem${i + 1}`}>
                 {data.name}
               </li>
             );
